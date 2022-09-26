@@ -9,6 +9,7 @@ students = {
         "age": 18,
         "class": "Year 15",
         "sex": "male"
+        "sport": "soccer"
     }
 }
 
