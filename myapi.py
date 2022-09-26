@@ -8,7 +8,7 @@ students = {
         "name": "john",
         "age": 18,
         "class": "Year 15",
-        "sex": "male"
+        "sex": "male",
         "sport": "soccer"
     }
 }
@@ -18,5 +18,5 @@ students = {
  #   return {"name": "First Name"}
 
 @app.get("/get-student/{student_id}")
-def get_student(student_id: int = Path(None, description="the ID of the student you want to view", gt=0 lt=3)):
+def get_student(student_id: int = Path(None description="the ID of the student you want to view", gt=0 lt=3)):
     return students[student_id]
